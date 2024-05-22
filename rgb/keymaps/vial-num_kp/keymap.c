@@ -183,7 +183,7 @@ void keyboard_post_init_user(void) {
     rgblight_layers = my_rgb_layers;
 }
 
-#define NUMLOCK_ON (host_keyboard_leds() & (1<<USB_LED_NUM_LOCK))
+#define NUMLOCK_ON (host_keyboard_led_state().num_lock)
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_layer_state(L_NUMLOCK, NUMLOCK_ON);
