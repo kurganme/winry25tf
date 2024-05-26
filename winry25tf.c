@@ -15,3 +15,6 @@
  */
 
 #include "winry25tf.h"
+
+#include "quantum/keymap_extras/keymap_italian.h"
+#include "quantum/keymap_extras/sendstring_italian.h"
